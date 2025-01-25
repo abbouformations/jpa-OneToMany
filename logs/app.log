@@ -1,0 +1,196 @@
+2025-01-25 12:37:30,658 DEBUG o.h.SQL [main] 
+    select
+        categorie0_.id as id1_1_,
+        categorie0_.categorie as categori2_1_ 
+    from
+        Categorie categorie0_ 
+    where
+        categorie0_.categorie=?
+2025-01-25 12:37:30,668 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [VARCHAR] - [CATEGORIE_1]
+2025-01-25 12:37:30,719 DEBUG o.h.SQL [main] 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2025-01-25 12:37:30,721 DEBUG o.h.SQL [main] 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2025-01-25 12:37:30,752 DEBUG o.h.SQL [main] 
+    insert 
+    into
+        Categorie
+        (categorie, id) 
+    values
+        (?, ?)
+2025-01-25 12:37:30,753 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [VARCHAR] - [CATEGORIE_1]
+2025-01-25 12:37:30,754 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [2] as [BIGINT] - [1]
+2025-01-25 12:37:30,769 INFO m.f.j.d.DaoImpl [main] ma.formations.jpa.service.model.Categorie ajouté avec succés
+2025-01-25 12:37:30,786 DEBUG o.h.SQL [main] 
+    select
+        categorie0_.id as id1_1_0_,
+        categorie0_.categorie as categori2_1_0_ 
+    from
+        Categorie categorie0_ 
+    where
+        categorie0_.id=?
+2025-01-25 12:37:30,787 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [BIGINT] - [1]
+2025-01-25 12:37:30,796 DEBUG o.h.SQL [main] 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2025-01-25 12:37:30,798 DEBUG o.h.SQL [main] 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2025-01-25 12:37:30,812 DEBUG o.h.SQL [main] 
+    insert 
+    into
+        Article
+        (categorie, description, id) 
+    values
+        (?, ?, ?)
+2025-01-25 12:37:30,813 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [BIGINT] - [1]
+2025-01-25 12:37:30,813 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [2] as [VARCHAR] - [PC PORTAble]
+2025-01-25 12:37:30,814 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [3] as [BIGINT] - [2]
+2025-01-25 12:37:30,822 INFO m.f.j.d.DaoImpl [main] ma.formations.jpa.service.model.Article ajouté avec succés
+2025-01-25 12:37:30,824 DEBUG o.h.SQL [main] 
+    select
+        categorie0_.id as id1_1_0_,
+        categorie0_.categorie as categori2_1_0_ 
+    from
+        Categorie categorie0_ 
+    where
+        categorie0_.id=?
+2025-01-25 12:37:30,825 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [BIGINT] - [1]
+2025-01-25 12:37:30,827 DEBUG o.h.SQL [main] 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2025-01-25 12:37:30,828 DEBUG o.h.SQL [main] 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2025-01-25 12:37:30,842 DEBUG o.h.SQL [main] 
+    insert 
+    into
+        Article
+        (categorie, description, id) 
+    values
+        (?, ?, ?)
+2025-01-25 12:37:30,843 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [BIGINT] - [1]
+2025-01-25 12:37:30,843 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [2] as [VARCHAR] - [PC FIXE]
+2025-01-25 12:37:30,843 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [3] as [BIGINT] - [3]
+2025-01-25 12:37:30,854 INFO m.f.j.d.DaoImpl [main] ma.formations.jpa.service.model.Article ajouté avec succés
+2025-01-25 12:37:30,856 DEBUG o.h.SQL [main] 
+    select
+        categorie0_.id as id1_1_0_,
+        categorie0_.categorie as categori2_1_0_ 
+    from
+        Categorie categorie0_ 
+    where
+        categorie0_.id=?
+2025-01-25 12:37:30,856 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [BIGINT] - [1]
+2025-01-25 12:37:30,859 DEBUG o.h.SQL [main] 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2025-01-25 12:37:30,860 DEBUG o.h.SQL [main] 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2025-01-25 12:37:30,876 DEBUG o.h.SQL [main] 
+    insert 
+    into
+        Article
+        (categorie, description, id) 
+    values
+        (?, ?, ?)
+2025-01-25 12:37:30,878 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [BIGINT] - [1]
+2025-01-25 12:37:30,879 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [2] as [VARCHAR] - [TV]
+2025-01-25 12:37:30,880 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [3] as [BIGINT] - [4]
+2025-01-25 12:37:30,897 INFO m.f.j.d.DaoImpl [main] ma.formations.jpa.service.model.Article ajouté avec succés
+2025-01-25 12:37:30,898 DEBUG o.h.SQL [main] 
+    select
+        categorie0_.id as id1_1_,
+        categorie0_.categorie as categori2_1_ 
+    from
+        Categorie categorie0_ 
+    where
+        categorie0_.categorie=?
+2025-01-25 12:37:30,901 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [VARCHAR] - [CATEGORIE_2]
+2025-01-25 12:37:30,913 DEBUG o.h.SQL [main] 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2025-01-25 12:37:30,916 DEBUG o.h.SQL [main] 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2025-01-25 12:37:30,933 DEBUG o.h.SQL [main] 
+    insert 
+    into
+        Categorie
+        (categorie, id) 
+    values
+        (?, ?)
+2025-01-25 12:37:30,934 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [VARCHAR] - [CATEGORIE_2]
+2025-01-25 12:37:30,935 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [2] as [BIGINT] - [5]
+2025-01-25 12:37:30,949 INFO m.f.j.d.DaoImpl [main] ma.formations.jpa.service.model.Categorie ajouté avec succés
+2025-01-25 12:37:30,953 DEBUG o.h.SQL [main] 
+    select
+        categorie0_.id as id1_1_0_,
+        categorie0_.categorie as categori2_1_0_ 
+    from
+        Categorie categorie0_ 
+    where
+        categorie0_.id=?
+2025-01-25 12:37:30,954 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [BIGINT] - [5]
+2025-01-25 12:37:30,958 DEBUG o.h.SQL [main] 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+2025-01-25 12:37:30,961 DEBUG o.h.SQL [main] 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2025-01-25 12:37:30,976 DEBUG o.h.SQL [main] 
+    insert 
+    into
+        Article
+        (categorie, description, id) 
+    values
+        (?, ?, ?)
+2025-01-25 12:37:30,978 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [1] as [BIGINT] - [5]
+2025-01-25 12:37:30,978 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [2] as [VARCHAR] - [CAMERA]
+2025-01-25 12:37:30,979 TRACE o.h.t.d.s.BasicBinder [main] binding parameter [3] as [BIGINT] - [6]
+2025-01-25 12:37:30,992 INFO m.f.j.d.DaoImpl [main] ma.formations.jpa.service.model.Article ajouté avec succés
