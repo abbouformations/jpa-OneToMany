@@ -1,58 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence version="1.0"
-	xmlns="http://java.sun.com/xml/ns/persistence">
-	
-	<!-- 
-	RESOURCE_LOCAL :dans un environnement Java SE (on a pas le serveur d'application Java EE).
-	JTA (Java Transaction API): Dans un environnement Java EE (exemple EJB = Entreprise Java Bean).
-	 -->
-	<persistence-unit name="unite1" transaction-type="RESOURCE_LOCAL">
-		<!-- provider -->
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
+	<persistence-unit name="UNITE1" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<properties>
-			<!-- Classes persistantes -->
-			<property name="hibernate.archive.autodetection" value="class, hbm" />
-			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.format_sql" value="true" />
-			<property name="use_sql_comments" value="true" />
-			<!-- connexion JDBC -->
-			<property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver" />
-			<property name="hibernate.connection.url"
-				value="jdbc:mysql://localhost:3306/test?createDatabaseIfNotExist=true&amp;useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" />
+			<property name="hibernate.archive.autodetection" value="class, hbm"/>
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
+			<property name="use_sql_comments" value="true"/>
 
-			<property name="hibernate.connection.username" value="root" />
-			<property name="hibernate.connection.password" value="root" />
-			<!-- création automatique du schéma -->
-			<property name="hibernate.hbm2ddl.auto" value="update" />
-			<!-- Dialecte -->
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+			<property name="hibernate.connection.url"
+					  value="jdbc:mysql://localhost:3306/jpa_db_onetomany?createDatabaseIfNotExist=true&amp;serverTimezone=UTC"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="root"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
 		</properties>
 	</persistence-unit>
-	
-	
-	
-	<persistence-unit name="unite2" transaction-type="RESOURCE_LOCAL">
-		<!-- provider -->
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<properties>
-			<!-- Classes persistantes -->
-			<property name="hibernate.archive.autodetection" value="class, hbm" />
-			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.format_sql" value="true" />
-			<property name="use_sql_comments" value="true" />
-			<!-- connexion JDBC -->
-			<property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver" />
-			<property name="hibernate.connection.url"
-				value="jdbc:mysql://localhost:3306/test?createDatabaseIfNotExist=true&amp;useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" />
-
-			<property name="hibernate.connection.username" value="root" />
-			<property name="hibernate.connection.password" value="root" />
-			<!-- création automatique du schéma -->
-			<property name="hibernate.hbm2ddl.auto" value="update" />
-			<!-- Dialecte -->
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
-		</properties>
-	</persistence-unit>
-	
-	
-</persistence>   
+</persistence>
