@@ -3,6 +3,9 @@ package ma.formations.jpa;
 import ma.formations.jpa.dao.DaoImpl;
 import ma.formations.jpa.dao.IDao;
 
+/**
+ * Supprimer en cascade une catégorie donnée avec tous les articles correspondants.
+ */
 public class Test3 {
     static IDao dao = new DaoImpl();
 

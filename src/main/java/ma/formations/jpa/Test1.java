@@ -6,7 +6,7 @@ import ma.formations.jpa.model.Article;
 import ma.formations.jpa.model.Categorie;
 
 /**
- * Créer des articles
+ * Créer des articles avec leurs catégories
  */
 public class Test1 {
     static IDao dao = new DaoImpl();

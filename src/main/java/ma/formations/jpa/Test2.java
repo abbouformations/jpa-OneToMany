@@ -3,6 +3,9 @@ package ma.formations.jpa;
 import ma.formations.jpa.dao.DaoImpl;
 import ma.formations.jpa.dao.IDao;
 
+/**
+ * Consulter les articles par une catégorie donnée.
+ */
 public class Test2 {
     static IDao dao = new DaoImpl();
 
