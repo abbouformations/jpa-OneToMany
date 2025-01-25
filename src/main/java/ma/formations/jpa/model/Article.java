@@ -1,4 +1,4 @@
-package ma.formations.jpa.service.model;
+package ma.formations.jpa.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,6 +16,7 @@ public class Article {
     @Id
     @GeneratedValue
     private Long id;
+    @Column(nullable = false, unique = true)
     private String description;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "categorie")

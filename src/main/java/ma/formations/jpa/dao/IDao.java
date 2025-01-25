@@ -1,11 +1,16 @@
 package ma.formations.jpa.dao;
 
-import ma.formations.jpa.service.model.Categorie;
+import ma.formations.jpa.model.Article;
+
+import java.util.List;
 
 public interface IDao {
-    <T> T save(T t);
+    void saveArticle(Article article);
 
-    void remove(Long id);
+    boolean removeArticle(String articleDescription);
 
-    Categorie getCategorieByName(String categorieName);
+    boolean removeCategorie(String categorieDescription);
+
+    List<Article> getArticlesByCategorie(String categorieName);
+
 }
